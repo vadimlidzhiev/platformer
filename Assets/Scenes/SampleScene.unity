@@ -254,7 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _groundPlayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   IsTouchingLayer: 1
 --- !u!58 &170517698
 CircleCollider2D:
@@ -1623,8 +1623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pushImpulse: 100
-  _maxPushSpeed: 1
-  _topContactOffset: 0.2
+  _maxHorizontalSpeed: 0.8
+  _topTolerance: 0.02
 --- !u!1 &1765815804
 GameObject:
   m_ObjectHideFlags: 0
