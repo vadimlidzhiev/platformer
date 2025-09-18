@@ -7,6 +7,11 @@ public class LayerCheck : MonoBehaviour
 
     public bool IsTouchingLayer;
 
+    private void Reset()
+    {
+        _groundPlayer = LayerMask.GetMask("Ground", "Pushable");
+    }
+
     private void Awake()
     {
         _collider = GetComponent<Collider2D>();
